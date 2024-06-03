@@ -32,15 +32,15 @@ export default function Home() {
               fill="#7A28A4"
             />
 
-            <div className="flex flex-col md:flex-row items-center gap-2 justify-evenly">
-              <div className="flex flex-col gap-10 text-white font-bold leading-relaxed pl-10">
-                <div className="flex gap-4 roll-in-left text-5xl">
+            <div className="flex flex-col md:flex-row items-center gap-1 justify-evenly">
+              <div className="flex flex-col gap-10 text-white font-bold leading-relaxed pl-20">
+                <div className="flex gap-4 w-full roll-in-left text-5xl">
                   <h1 className="text-text-1">{`>`}</h1>
                   <h1 className="w-full">
                     <Typewriter
                       options={{
                         strings: [
-                          "Unify. Disclose. Secure.",
+                          "Unify. Disclose. Secure",
                           "Hack Ethically",
                           "Report Vulnerabilities",
                           "Earn Rewards",
@@ -56,20 +56,20 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="flex gap-4 flex-col  slide-in-blurred-top">
-                  <h2 className="text-xl font-light">
+                  <h2 className="text-lg font-light">
                     Over{" "}
                     <span className="text-text-1 font-semibold">
                       {" "}
                       2 million+
                     </span>{" "}
-                    cyberattacks happen a year worldwide. Traditional <br />
-                    security misses blind spots.{" "}
+                    cyberattacks happen a year worldwide.
+                    <br /> Traditional security misses blind spots.{" "}
                     <span className="text-text-1 font-semibold"> Vulzap</span>,
-                    the next-gen VDP , empowers <br /> you to find and fix these
+                    the <br />
+                    next-gen VDP, empowers you to find and fix these <br />
                     vulnerabilities before attackers strike.
-                    <br />
                   </h2>
-                  <h2 className="text-lg font-medium">
+                  <h2 className="text-md font-medium">
                     Become a cyber guardian with Vulzap. Report vulnerabilities{" "}
                     <br /> get{" "}
                     <span className="text-text-1">rewards & hall of fame</span>{" "}
@@ -77,21 +77,16 @@ export default function Home() {
                   </h2>
                 </div>
 
-                <div className="font-medium text-medium flex gap-16 text-text-1">
+                <div className="font-medium text-medium flex gap-16 text-text-1 pr-10">
                   <h1>Trusted By 100+ Companies</h1>
                   <h1>30+ Programs</h1>
                   <h1>500+ Active Researchers</h1>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-[700px] h-[650px]">
+              <div className="flex items-center justify-center w-[600px] h-[500px]">
                 <GlobeDemo />
               </div>
             </div>
-          </div>
-          {/* Sample */}
-          <div className="h-screen">
-            <h1>hi</h1>
-            <Image src="/logo.svg" height={200} width={200} alt="hi" />
           </div>
         </div>
       )}

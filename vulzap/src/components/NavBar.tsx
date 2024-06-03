@@ -4,7 +4,7 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const NavBar = () => {
   return (
-    <nav className="fixed z-50 glass-effect shimmer-effect border border-purple-800 font-semibold w-[900px] h-20 flex items-center justify-between px-16 mx-auto my-4 rounded-[13px] ">
+    <nav className="fixed z-50 glass-effect shimmer-effect border border-purple-800 font-semibold w-[850px] h-20 flex items-center justify-between px-16 mx-auto my-4 rounded-[13px] ">
       <div className="flex space-x-8 gap-10 items-center">
         <Link href="#" className="text-white hover:text-text-1">
           Hacktivity
