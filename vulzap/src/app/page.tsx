@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div className="">
-      <div className="h-screen pt-14 w-full flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="h-screen pt-14 w-full flex md:items-center md:justify-center bg-black/[0.98] antialiased bg-grid-white/[0.03] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="#7A28A4"
@@ -16,17 +16,17 @@ export default function Home() {
           fill="#7A28A4"
         />
 
-        <div className="flex flex-col md:flex-row items-center justify-evenly px-3">
-          <div className="flex flex-col  text-5xl gap-1 text-white font-bold leading-relaxed">
-            <div className="flex gap-3">
+        <div className="flex flex-col md:flex-row items-center gap-2 justify-evenly">
+          <div className="flex flex-col gap-3 text-5xl text-white font-bold leading-relaxed pl-10">
+            <div className="flex gap-4 roll-in-left">
               <h1 className="text-text-1">{`>`}</h1>
               <h1 className="w-full">
                 <Typewriter
                   options={{
                     strings: [
+                      "Unify. Disclose. Secure.",
                       "Report Vulnerabilities",
                       "Earn Rewards",
-                      "Unify. Disclose. Secure.",
                       "Beyond Blind Spots",
                     ],
                     delay: 50,
@@ -37,15 +37,25 @@ export default function Home() {
                 />
               </h1>
             </div>
-            <h2 className="text-xl font-light">
-              Over <span className="text-text-1 font-semibold"> 2 million</span>{" "}
-              cyberattacks happen a year worldwide. Traditional <br />
-              security has blind spots. Vulzap, the next-gen VDP, empowers you{" "}
-              <br />
-              to find and fix these vulnerabilities before attackers do.
-            </h2>
+            <div className="flex gap-4 flex-col  slide-in-blurred-top">
+              <h2 className="text-xl font-extralight">
+                Over{" "}
+                <span className="text-text-1 font-semibold"> 2 million</span>{" "}
+                cyberattacks happen a year worldwide. Traditional <br />
+                security has blind spots.{" "}
+                <span className="text-text-1 font-semibold"> Vulzap</span>, the
+                next-gen VDP , empowers <br /> you to find and fix these
+                vulnerabilities before attackers do.
+                <br />
+              </h2>
+              <h2 className="text-lg font-light">
+                Become a cyber guardian with Vulzap. Report vulnerabilities{" "}
+                <br /> get{" "}
+                <span className="font-normal">rewards & hall of fames</span> .
+              </h2>
+            </div>
           </div>
-          <div className="flex items-center justify-center w-[790px] h-[650px]">
+          <div className="flex items-center justify-center w-[700px] h-[650px]">
             <GlobeDemo />
           </div>
         </div>

@@ -396,7 +396,7 @@ export function GlobeDemo() {
   return (
     <>
       <div className="w-full h-full md:h-full z-10">
-        <World data={sampleArcs} globeConfig={globeConfig} />;
+        <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </>
   );
