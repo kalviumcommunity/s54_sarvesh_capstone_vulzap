@@ -77,6 +77,30 @@
 }
 
 
+.glass-effect {
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(5.2px);
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.shimmer-effect {
+  background: linear-gradient(320deg,
+      rgba(255, 255, 255, 0.12) 60%,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0.1) 60%);
+  background-size: 200% 100%;
+  animation: shimmer 8s linear infinite;
+}
+
 .custom-scrollbar {
 
   /* Hide default scrollbar */
@@ -678,4 +702,85 @@
     letter-spacing: normal;
     opacity: 1
   }
+}
+
+
+
+/* styles/animations.css */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.logo-fade-in {
+  animation: fadeInScale 0.5s forwards;
+}
+
+.logo-fade-out {
+  animation: fadeOutScale 0.5s forwards;
+}
+
+.text-fade-in {
+  animation: fadeInScale 0.5s forwards;
+}
+
+.text-fade-out {
+  animation: fadeOutScale 0.5s forwards;
+}
+
+.logo-container:hover .logo {
+  animation: fadeOutScale 0.5s forwards;
+  opacity: 0;
+}
+
+.logo-container:hover .site-name {
+  animation: fadeInScale 0.5s forwards;
+  opacity: 1;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo,
+.site-name {
+  position: absolute;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.site-name {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.logo-container:hover .logo {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.logo-container:hover .site-name {
+  opacity: 1;
+  transform: scale(1);
 }

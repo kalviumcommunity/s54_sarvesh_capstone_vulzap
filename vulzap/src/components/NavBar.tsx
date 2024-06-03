@@ -1,29 +1,45 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const NavBar = () => {
   return (
-    <nav className="w-[1109px] h-[106px] flex items-center justify-between p-6 glass-effect mx-auto my-4 rounded-[13px]">
-      <div className="flex space-x-8">
-        <a href="#" className="text-white hover:text-gray-300">
+    <nav className="fixed z-50 glass-effect shimmer-effect border border-purple-800 font-semibold w-[900px] h-20 flex items-center justify-between px-16 mx-auto my-4 rounded-[13px] ">
+      <div className="flex space-x-8 gap-10 items-center">
+        <Link href="#" className="text-white hover:text-text-1">
           Hacktivity
-        </a>
-        <a href="#" className="text-white hover:text-gray-300">
+        </Link>
+        <Link href="#" className="text-white hover:text-text-1">
           About
-        </a>
+        </Link>
       </div>
       <div>
-        <img src="/path/to/your/logo.png" alt="Logo" className="h-10" />
-      </div>
-      <div className="flex space-x-4">
-        <a href="#" className="text-white hover:text-gray-300">
-          Sign Up
-        </a>
-        <a
-          href="#"
-          className="bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700"
+        <Link
+          href={"/"}
+          className="hover:scale-105 cursor-pointer relative logo-container"
         >
-          Log In
-        </a>
+          <Image
+            className=""
+            src={"/logo.svg"}
+            height={50}
+            width={50}
+            alt="logo"
+          />
+        </Link>
+      </div>
+      <div className="flex space-x-4 gap-10 items-center">
+        <Link href="/signup" className="text-white hover:text-text-1">
+          Sign Up
+        </Link>
+        <Link href={"/login"}>
+          <HoverBorderGradient
+            containerClassName="rounded-[14px] border-0 hover:scale-105"
+            as="button"
+            className="bg-text-2 bg-opacity-55 text-white flex items-center space-x-2"
+          >
+            <span>Log In</span>
+          </HoverBorderGradient>
+        </Link>
       </div>
     </nav>
   );
