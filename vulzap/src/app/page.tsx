@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div className="">
-      <div className="h-screen pt-14 w-full flex md:items-center md:justify-center bg-black/[0.98] antialiased bg-grid-white/[0.03] relative overflow-hidden">
+      <div className="h-screen pt-24 w-full flex md:items-center md:justify-center bg-black/[0.98] antialiased bg-grid-white/[0.03] relative overflow-hidden">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="#7A28A4"
@@ -25,8 +25,10 @@ export default function Home() {
                   options={{
                     strings: [
                       "Unify. Disclose. Secure.",
+                      "Hack Ethically",
                       "Report Vulnerabilities",
                       "Earn Rewards",
+                      "Get Honoured",
                       "Beyond Blind Spots",
                     ],
                     delay: 50,
@@ -38,7 +40,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="flex gap-4 flex-col  slide-in-blurred-top">
-              <h2 className="text-xl font-extralight">
+              <h2 className="text-xl font-light">
                 Over{" "}
                 <span className="text-text-1 font-semibold"> 2 million</span>{" "}
                 cyberattacks happen a year worldwide. Traditional <br />
@@ -48,10 +50,10 @@ export default function Home() {
                 vulnerabilities before attackers do.
                 <br />
               </h2>
-              <h2 className="text-lg font-light">
+              <h2 className="text-lg font-medium">
                 Become a cyber guardian with Vulzap. Report vulnerabilities{" "}
                 <br /> get{" "}
-                <span className="font-normal">rewards & hall of fames</span> .
+                <span className="text-text-1">rewards & hall of fames</span> .
               </h2>
             </div>
           </div>
