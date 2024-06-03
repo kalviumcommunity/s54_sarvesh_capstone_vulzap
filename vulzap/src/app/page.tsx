@@ -16,8 +16,8 @@ export default function Home() {
           fill="#7A28A4"
         />
 
-        <div className="flex flex-col md:flex-row items-center justify-evenly px-28">
-          <div className="flex flex-col  text-5xl gap-1 text-white font-bold leading-relaxed w-full">
+        <div className="flex flex-col md:flex-row items-center justify-evenly px-3">
+          <div className="flex flex-col  text-5xl gap-1 text-white font-bold leading-relaxed">
             <div className="flex gap-3">
               <h1 className="text-text-1">{`>`}</h1>
               <h1 className="w-full">
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
             <h2 className="text-xl font-light">
               Over <span className="text-text-1 font-semibold"> 2 million</span>{" "}
-              cyberattacks happen annually. Traditional <br />
+              cyberattacks happen a year worldwide. Traditional <br />
               security has blind spots. Vulzap, the next-gen VDP, empowers you{" "}
               <br />
               to find and fix these vulnerabilities before attackers do.
